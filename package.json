@@ -1,0 +1,26 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode production",
+    "build": "webpack --mode development"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaroma/online-store.git"
+  },
+  "author": "agaroma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agaroma/online-store/issues"
+  },
+  "homepage": "https://github.com/agaroma/online-store#readme",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
