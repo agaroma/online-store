@@ -1,7 +1,7 @@
 const path = require('path'); // Визначення змінної path
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const miniCss = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/scripts/index.js',
@@ -17,8 +17,12 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+        test:/\.(s*)css$/,
+         use: [
+            miniCss.loader,
+            'css-loader',
+            'sass-loader',
+         ],
       },
       {
         test: /\.js$/,
@@ -36,7 +40,7 @@ module.exports = {
       inject: 'body',
       reload: true, 
     }),
-    new MiniCssExtractPlugin({
+    new miniCss({
       filename: 'styles.css',
     }),
   ],

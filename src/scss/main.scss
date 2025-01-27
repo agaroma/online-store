@@ -1,4 +1,10 @@
-$primary-color: #3498db;
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+
+
 
 body {
   background-color: $primary-color;
