@@ -1,0 +1,45 @@
+.header {
+    background: #f9f9f9;
+    border-bottom: 1px solid #eaeaea;
+  
+    &__logo img {
+      height: 50px;
+    }
+  
+    &__nav .nav__list {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+  
+    &__actions {
+      display: flex;
+      gap: 15px;
+    }
+  }
+
+  .btn {
+    background: $primary-color;
+    color: $background-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+  
+  .hero__image {
+    width: 952px;
+    height: 612px;
+    top: 196px;
+    left: -15px;     
+  }
+
+ .hero__image2{
+    width: 890px;
+    height: 592px;
+    top: 193px;
+    left: 1166px;
+ }
